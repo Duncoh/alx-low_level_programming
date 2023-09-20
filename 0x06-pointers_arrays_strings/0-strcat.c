@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ * *_strcat - a function that concatenates two strings,
+ * followed by a new line
+ * @dest: elements destination array.
+ * @src: elements of the source array.
+ *
+ * Return: a pointer to the resulting string.
+ */
+char *_strcat(char *dest, char *src)
+{
+	int len = 0;
+	int i;
+
+	while (dest[len] != '\0')
+	{
+		len++;
+	}
+	for (i = 0 ; src[i] != '\0'; i++)
+	{
+		dest[len + i] = src[i];
+	}
+	dest[len + i] = '\0';
+	return (dest);
+}
