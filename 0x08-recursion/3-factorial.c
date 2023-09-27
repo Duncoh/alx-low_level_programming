@@ -11,9 +11,9 @@
  */
 
 int factorial(int n)
-{
-	/* base case*/
-	if (n <= 1)
+	{
+	/* base case */
+	if (n == 0)
 	{
 		return (1);
 	}
